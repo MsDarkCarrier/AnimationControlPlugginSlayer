@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\skele\\Documents\\GitHub\\AnimationControlPlugginSlayer\\ProyectPluggin\\pluggin-animation-move\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64DFFCD5-DFD5-4D6B-9EC2-59FA5252E8F2}|PlugginAnimationMove.csproj|c:\\users\\skele\\documents\\github\\animationcontrolplugginslayer\\proyectpluggin\\pluggin-animation-move\\addons\\animationcontrolplugin\\animationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DFFCD5-DFD5-4D6B-9EC2-59FA5252E8F2}|PlugginAnimationMove.csproj|solutionrelative:addons\\animationcontrolplugin\\animationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DFFCD5-DFD5-4D6B-9EC2-59FA5252E8F2}|PlugginAnimationMove.csproj|c:\\users\\skele\\documents\\github\\animationcontrolplugginslayer\\proyectpluggin\\pluggin-animation-move\\addons\\animationcontrolplugin\\animationcontrolplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DFFCD5-DFD5-4D6B-9EC2-59FA5252E8F2}|PlugginAnimationMove.csproj|solutionrelative:addons\\animationcontrolplugin\\animationcontrolplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimationControl.cs",
+              "DocumentMoniker": "C:\\Users\\skele\\Documents\\GitHub\\AnimationControlPlugginSlayer\\ProyectPluggin\\pluggin-animation-move\\addons\\AnimationControlPlugin\\AnimationControl.cs",
+              "RelativeDocumentMoniker": "addons\\AnimationControlPlugin\\AnimationControl.cs",
+              "ToolTip": "C:\\Users\\skele\\Documents\\GitHub\\AnimationControlPlugginSlayer\\ProyectPluggin\\pluggin-animation-move\\addons\\AnimationControlPlugin\\AnimationControl.cs",
+              "RelativeToolTip": "addons\\AnimationControlPlugin\\AnimationControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T03:01:38.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimationControlPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\skele\\Documents\\GitHub\\AnimationControlPlugginSlayer\\ProyectPluggin\\pluggin-animation-move\\addons\\AnimationControlPlugin\\AnimationControlPlugin.cs",
+              "RelativeDocumentMoniker": "addons\\AnimationControlPlugin\\AnimationControlPlugin.cs",
+              "ToolTip": "C:\\Users\\skele\\Documents\\GitHub\\AnimationControlPlugginSlayer\\ProyectPluggin\\pluggin-animation-move\\addons\\AnimationControlPlugin\\AnimationControlPlugin.cs",
+              "RelativeToolTip": "addons\\AnimationControlPlugin\\AnimationControlPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T00:36:53.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
