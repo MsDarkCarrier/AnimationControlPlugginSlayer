@@ -59,28 +59,22 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.096204735, 0.09620475, 0.096204735, 1)
 
-[node name="MoveObject" type="Panel" parent="CanvasLayer/UIControl" node_paths=PackedStringArray("uiLeftUp", "uiRightDown", "oLeftUp", "oRightDown", "objectTarget")]
+[node name="MoveObject" type="Panel" parent="CanvasLayer/UIControl"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.666
-anchor_top = 0.40100002
-anchor_right = 0.94400007
-anchor_bottom = 0.94900006
-offset_left = -158.232
-offset_top = -45.848022
-offset_right = -158.48804
-offset_bottom = -45.951965
+anchor_left = 0.52900004
+anchor_top = 0.33
+anchor_right = 0.83900005
+anchor_bottom = 0.878
+offset_left = -609.4081
+offset_top = -213.84001
+offset_right = -608.5281
+offset_bottom = -213.94397
 theme_override_styles/panel = SubResource("StyleBoxEmpty_2nsi2")
 script = ExtResource("1_fi1yh")
 typeAnimationControl = 1
 activateAnimation = true
-target = Vector2(733, 56)
-direction = 162
-uiLeftUp = NodePath("../UILeftUp")
-uiRightDown = NodePath("../UIRightDown")
-oLeftUp = NodePath("LeftUp")
-oRightDown = NodePath("RightDown")
-objectTarget = NodePath("../Target")
+direction = 161
 metadata/_custom_type_script = "uid://ciwxvevgsxdnd"
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIControl/MoveObject"]
@@ -111,58 +105,6 @@ grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1e-05, 1e-05)
 
-[node name="MoveAndOpacity" type="Panel" parent="CanvasLayer/UIControl" node_paths=PackedStringArray("uiLeftUp", "uiRightDown", "oLeftUp", "oRightDown")]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.16800001
-anchor_top = 0.028
-anchor_right = 0.003
-anchor_bottom = 0.326
-offset_left = 0.53601074
-offset_top = -0.144001
-offset_right = -0.4560001
-offset_bottom = -0.2480011
-theme_override_styles/panel = SubResource("StyleBoxEmpty_2nsi2")
-script = ExtResource("1_fi1yh")
-typeAnimationControl = 2
-activateAnimation = true
-target = Vector2(0, 18)
-direction = -160
-uiLeftUp = NodePath("../UILeftUp")
-uiRightDown = NodePath("../UIRightDown")
-oLeftUp = NodePath("LeftUp")
-oRightDown = NodePath("RightDown")
-metadata/_custom_type_script = "uid://ciwxvevgsxdnd"
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIControl/MoveAndOpacity"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_2nsi2")
-expand_mode = 3
-stretch_mode = 6
-
-[node name="LeftUp" type="Control" parent="CanvasLayer/UIControl/MoveAndOpacity"]
-layout_mode = 1
-anchors_preset = 0
-offset_bottom = 40.0
-scale = Vector2(1e-05, 1e-05)
-
-[node name="RightDown" type="Control" parent="CanvasLayer/UIControl/MoveAndOpacity"]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 0
-grow_vertical = 0
-scale = Vector2(1e-05, 1e-05)
-
 [node name="UIAnimation" type="Panel" parent="CanvasLayer/UIControl"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -179,7 +121,6 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_v1tjy")
 script = ExtResource("1_fi1yh")
 typeAnimationControl = 5
 activateAnimation = true
-hiddeAnimation = true
 metadata/_custom_type_script = "uid://ciwxvevgsxdnd"
 
 [node name="Label" type="Label" parent="CanvasLayer/UIControl/UIAnimation"]

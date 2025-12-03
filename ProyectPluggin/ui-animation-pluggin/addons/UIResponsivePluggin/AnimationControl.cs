@@ -33,10 +33,6 @@ public partial class AnimationControl : Panel
     private Vector2 oldTarget = new Vector2();
     [Export] public MovDirection direction;
 
-    [ExportSubgroup("UILimits")]
-    [Export] public Control uiLeftUp, uiRightDown;
-    [ExportSubgroup("ObjectLimits")]
-    [Export] public Control oLeftUp, oRightDown;
     [ExportSubgroup("TargetObject")]
     [Export] public Control objectTarget = null;
 
@@ -260,29 +256,35 @@ public partial class AnimationControl : Panel
             return;
         }
 
-        float objectWidth = Mathf.Sqrt(Mathf.Pow((oLeftUp.GlobalPosition.X - oRightDown.GlobalPosition.X), 2));
-        float objectHeight = Mathf.Sqrt(Mathf.Pow((oLeftUp.GlobalPosition.Y - oRightDown.GlobalPosition.Y), 2));
+
+        float objectWidth = Size.X;
+        float objectHeight = Size.Y;
+
+        float screenResolutionX = (float)ProjectSettings.GetSetting("display/window/size/viewport_width");
+        float screenResolutionY = (float)ProjectSettings.GetSetting("display/window/size/viewport_height");
 
         Vector2 globalPosi = new Vector2();
         Vector2 targetPosi = new Vector2();
 
+
         switch (direction)
         {
             case MovDirection.top:
-                globalPosi = new Vector2(GlobalPosition.X, uiLeftUp.GlobalPosition.Y);
-                targetPosi = new Vector2(GlobalPosition.X, uiLeftUp.GlobalPosition.Y - objectWidth);
+                globalPosi = new Vector2(GlobalPosition.X, 0);
+                targetPosi = new Vector2(GlobalPosition.X, -objectWidth);
+
                 break;
             case MovDirection.bottom:
-                globalPosi = new Vector2(GlobalPosition.X, uiRightDown.GlobalPosition.Y - objectWidth);
-                targetPosi = new Vector2(GlobalPosition.X, uiRightDown.GlobalPosition.Y + 20);
+                globalPosi = new Vector2(GlobalPosition.X, screenResolutionY - objectWidth);
+                targetPosi = new Vector2(GlobalPosition.X, screenResolutionY + 20);
                 break;
             case MovDirection.left:
-                globalPosi = new Vector2(uiLeftUp.GlobalPosition.X, GlobalPosition.Y);
-                targetPosi = new Vector2(uiLeftUp.GlobalPosition.X - objectHeight, GlobalPosition.Y);
+                globalPosi = new Vector2(0, GlobalPosition.Y);
+                targetPosi = new Vector2(-objectHeight, GlobalPosition.Y);
                 break;
             case MovDirection.right:
-                globalPosi = new Vector2(uiRightDown.GlobalPosition.X - objectWidth, GlobalPosition.Y);
-                targetPosi = new Vector2(uiRightDown.GlobalPosition.X + 20, GlobalPosition.Y);
+                globalPosi = new Vector2(screenResolutionX - objectWidth, GlobalPosition.Y);
+                targetPosi = new Vector2(screenResolutionX + 20, GlobalPosition.Y);
                 break;
         }
 
