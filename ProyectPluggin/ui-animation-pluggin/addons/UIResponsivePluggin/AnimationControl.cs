@@ -257,8 +257,9 @@ public partial class AnimationControl : Panel
         }
 
 
-        float objectWidth = Size.X;
-        float objectHeight = Size.Y;
+        float objectWidth = Size.Y;
+        float objectHeight = Size.X;
+
 
         float screenResolutionX = (float)ProjectSettings.GetSetting("display/window/size/viewport_width");
         float screenResolutionY = (float)ProjectSettings.GetSetting("display/window/size/viewport_height");
@@ -283,7 +284,7 @@ public partial class AnimationControl : Panel
                 targetPosi = new Vector2(-objectHeight, GlobalPosition.Y);
                 break;
             case MovDirection.right:
-                globalPosi = new Vector2(screenResolutionX - objectWidth, GlobalPosition.Y);
+                globalPosi = new Vector2(screenResolutionX - objectHeight, GlobalPosition.Y);
                 targetPosi = new Vector2(screenResolutionX + 20, GlobalPosition.Y);
                 break;
         }
